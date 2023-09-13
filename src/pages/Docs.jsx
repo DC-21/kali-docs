@@ -61,7 +61,7 @@ const Docs = () => {
         </div>
       </div>
       <div className="w-full flex py-4 text-blue-900 justify-between items-center">
-        <a>DiCE Labs||Copyright @ 2023</a>
+        <a>DiCE Labs||Copyright © 2023</a>
         <a href='https://github.com/dc-21' className="text-blue-900 cursor-pointer"><ion-icon size="large" name="logo-github"></ion-icon></a>
       </div>
     </div>
