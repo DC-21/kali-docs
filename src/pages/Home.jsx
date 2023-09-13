@@ -24,7 +24,7 @@ const Home = () => {
           <a className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             Docs
           </a>
-          <a className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
+          <a href='https://bmc.link/cholahkuboQ' className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             Donate
           </a>
           <button
