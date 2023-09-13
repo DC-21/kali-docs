@@ -68,8 +68,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-full flex py-4 text-white justify-between">
-        <a>DiCE Labs</a>
-        <a>Copyright @ 2023</a>
+        <a>DiCE Labs||Copyright @ 2023</a>
         <a className="text-white cursor-pointer"><ion-icon size="large" name="logo-facebook"></ion-icon></a>
       </div>
     </div>
