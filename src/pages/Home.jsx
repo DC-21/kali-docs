@@ -54,12 +54,13 @@ const Home = () => {
       </div>
       <div className="flex-grow flex justify-center items-center py-6">
         <div className="w-full justify-center items-center flex">
-          <div className="flex justify-center items-center w-full">
+          <div className="flex gap-4 justify-center items-center w-[450px] py-5 bg-white rounded-full">
             <input
               type="text"
               placeholder="Search..."
-              className="py-2 px-4 border rounded-full focus:outline-none focus:ring focus:border-blue-300"
+              className="py-4 px-2 w-[350px] bg-white"
             />
+            <ion-icon size="large" name="search-outline"></ion-icon>
           </div>
         </div>
       </div>
