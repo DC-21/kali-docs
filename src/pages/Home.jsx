@@ -20,6 +20,9 @@ const Home = () => {
       <div className="flex w-full py-6 justify-between">
         <a className="text-[25px] font-semibold text-white">Kali-Docs</a>
         <li className="flex gap-4 items-baseline">
+        <a className="md:flex hidden text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
+            News
+          </a>
           <a className="md:flex hidden text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             Docs
           </a>
@@ -37,8 +40,9 @@ const Home = () => {
             )}
             {open ? (
               <div className="w-full h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
-                <a className="py-2 w-full hover:bg-blue-400">Docs</a>
-                <a className="py-2 w-full hover:bg-blue-400">Donate</a>
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">News</a>
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">Docs</a>
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">Donate</a>
               </div>
             ) : null}
           </button>
