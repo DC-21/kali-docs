@@ -37,23 +37,31 @@ const Home = () => {
               <ion-icon size="large" name="grid-outline"></ion-icon>
             )}
             {open && (
-        <div className="w-full h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
-          <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
-            News
-          </a>
-          <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
-            Docs
-          </a>
-          <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
-            Donate
-          </a>
-        </div>
-      )}
+              <div className="w-full h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                  News
+                </a>
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                  Docs
+                </a>
+                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                  Donate
+                </a>
+              </div>
+            )}
           </button>
         </li>
       </div>
       <div className="flex-grow flex justify-center items-center py-6">
-        Home
+        <div className="w-full justify-center items-center flex">
+          <div className="flex justify-center items-center w-full">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="py-2 px-4 border rounded-full focus:outline-none focus:ring focus:border-blue-300"
+            />
+          </div>
+        </div>
       </div>
       <div className="py-4 text-white text-center">Footer</div>
     </div>
