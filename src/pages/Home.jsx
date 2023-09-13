@@ -36,14 +36,7 @@ const Home = () => {
             ) : (
               <ion-icon size="large" name="grid-outline"></ion-icon>
             )}
-          </button>
-        </li>
-      </div>
-      <div className="flex-grow flex justify-center items-center py-6">
-        Home
-      </div>
-      <div className="py-4 text-white text-center">Footer</div>
-      {open && (
+            {open && (
         <div className="w-full h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
           <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
             News
@@ -56,6 +49,13 @@ const Home = () => {
           </a>
         </div>
       )}
+          </button>
+        </li>
+      </div>
+      <div className="flex-grow flex justify-center items-center py-6">
+        Home
+      </div>
+      <div className="py-4 text-white text-center">Footer</div>
     </div>
   );
 };
