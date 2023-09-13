@@ -37,7 +37,7 @@ const Home = () => {
               <ion-icon size="large" name="grid-outline"></ion-icon>
             )}
             {open && (
-              <div className="w-full h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
+              <div className="w-full z-50 h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
                 <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   News
                 </a>
