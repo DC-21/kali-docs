@@ -1,10 +1,10 @@
-import Hero from "./components/Hero"
+import Home from "./pages/Home"
 
 const App = () => {
   return (
-    <>
-    <Hero/>
-    </>
+    <div>
+    <Home/>
+    </div>
   )
 }
 
