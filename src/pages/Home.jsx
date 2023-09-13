@@ -17,7 +17,8 @@ const Home = () => {
       className="w-full min-h-screen flex px-6 justify-center"
       style={divStyle}
     >
-      <div className="flex w-full py-6 justify-between">
+      <div className="flex flex-col w-full">
+      <div className="flex w-full py-4 justify-between">
         <a className="text-[25px] font-semibold text-white">Kali-Docs</a>
         <li className="flex gap-4 items-baseline">
         <a className="md:flex hidden text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
@@ -47,6 +48,8 @@ const Home = () => {
             ) : null}
           </button>
         </li>
+      </div>
+      <div>hello</div>
       </div>
     </div>
   );
