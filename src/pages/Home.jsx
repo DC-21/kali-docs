@@ -1,5 +1,6 @@
 import { useState } from "react";
 import backgroundImage from "../images/sun.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [open, setOpen] = useState(false);
@@ -16,14 +17,14 @@ const Home = () => {
   return (
     <div className="w-full min-h-screen flex flex-col px-6" style={divStyle}>
       <div className="flex w-full py-4 justify-between items-center">
-        <a className="text-[25px] cursor-pointer font-semibold text-white">Kali-Docs</a>
+        <Link to="/" className="text-[25px] cursor-pointer font-semibold text-white">Kali-Docs</Link>
         <li className="flex gap-4 items-baseline">
-          <a className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
+          <Link to="/news" className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             News
-          </a>
-          <a className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
+          </Link>
+          <Link to="/docs" className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             Docs
-          </a>
+          </Link>
           <a href='https://bmc.link/cholahkuboQ' className="md:flex hidden cursor-pointer text-[20px] text-white hover:bg-[#5295e0] px-2 py-2 rounded">
             Donate
           </a>
@@ -38,12 +39,12 @@ const Home = () => {
             )}
             {open && (
               <div className="w-full z-50 h-[200px] justify-center items-center text-blue-950 left-0 absolute py-4 flex flex-col backdrop-blur-md bg-[#f1f3fa] rounded">
-                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                <Link to="/news" className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   News
-                </a>
-                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                </Link>
+                <Link to="/docs" className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   Docs
-                </a>
+                </Link>
                 <a href='https://bmc.link/cholahkuboQ' className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   Donate
                 </a>
