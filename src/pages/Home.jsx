@@ -54,11 +54,12 @@ const Home = () => {
       </div>
       <div className="flex-grow flex justify-center items-center py-6">
         <div className="w-full justify-center items-center flex">
-          <div className="flex gap-4 justify-center items-center w-[450px] py-5 bg-white rounded-full">
+          <div htmlFor="searchInput" className="flex text-black gap-4 justify-center items-center lg:w-[450px] md:w-[450px] w-full lg:py-5 md:py-5 py-3 px-2 bg-white rounded-full">
             <input
               type="text"
+              id="searchInput"
               placeholder="Search..."
-              className="py-4 px-2 w-[350px] bg-white  focus:outline-none focus:ring-0"
+              className="py-2 px-2 lg:w-[350px] md:w-[350px] w-full focus:outline-none focus:ring-0 bg-white"
             />
             <ion-icon size="large" name="search-outline"></ion-icon>
           </div>
