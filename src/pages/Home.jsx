@@ -44,7 +44,7 @@ const Home = () => {
                 <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   Docs
                 </a>
-                <a className="py-2 w-full cursor-pointer hover:bg-blue-400">
+                <a href='https://bmc.link/cholahkuboQ' className="py-2 w-full cursor-pointer hover:bg-blue-400">
                   Donate
                 </a>
               </div>
