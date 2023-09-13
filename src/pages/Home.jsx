@@ -58,7 +58,7 @@ const Home = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="py-4 px-2 w-[350px] bg-white"
+              className="py-4 px-2 w-[350px] bg-white  focus:outline-none focus:ring-0"
             />
             <ion-icon size="large" name="search-outline"></ion-icon>
           </div>
