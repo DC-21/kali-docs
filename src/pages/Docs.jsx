@@ -45,9 +45,9 @@ const Docs = () => {
           </button>
         </li>
       </div>
-      <div className="flex-grow flex justify-center items-center py-6">
+      <div className="flex-grow flex flex-col justify-center items-center py-6">
         <div className="w-full justify-center items-center flex">
-          <div htmlFor="searchInput" className="flex text-black gap-4 justify-center items-center lg:w-[450px] md:w-[450px] w-full lg:py-5 md:py-5 py-3 px-2 bg-white rounded-full">
+          <div htmlFor="searchInput" className="flex border border-blue-900 text-black gap-4 justify-center items-center lg:w-[450px] md:w-[450px] w-full lg:py-5 md:py-5 py-3 px-2 bg-white rounded-full">
             <input
               type="text"
               id="searchInput"
@@ -58,6 +58,9 @@ const Docs = () => {
             <ion-icon size="large" name="search-outline"></ion-icon>
             </a>
           </div>
+        </div>
+        <div className='w-full flex justify-center h-screen py-10'>
+          <div className='border-2 justify-center flex w-full rounded border-blue-900'>Docs</div>
         </div>
       </div>
       <div className="w-full flex py-4 text-blue-900 justify-between items-center">
