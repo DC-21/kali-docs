@@ -46,17 +46,11 @@ const News = () => {
         </li>
       </div>
       <div className="flex-grow flex justify-center items-center py-6">
-        <div className="w-full justify-center items-center flex">
-          <div htmlFor="searchInput" className="flex text-black gap-4 justify-center items-center lg:w-[450px] md:w-[450px] w-full lg:py-5 md:py-5 py-3 px-2 bg-white rounded-full">
-            <input
-              type="text"
-              id="searchInput"
-              placeholder="Search..."
-              className="py-2 px-2 cursor-pointer lg:w-[350px] md:w-[350px] w-full focus:outline-none focus:ring-0 bg-white"
-            />
-            <a className="cursor-pointer">
-            <ion-icon size="large" name="search-outline"></ion-icon>
-            </a>
+        <div className="w-full justify-center items-center flex flex-col">
+          <h1 className="text-[35px]">Kali Latest News</h1>
+          <div className='w-full justify-start flex flex-col'>
+            <h1>Kali Linux 2023.3 Release (Internal Infrastructure & Kali Autopilot)</h1>
+            <p>Wednesday, 23 August 2023</p>
           </div>
         </div>
       </div>
