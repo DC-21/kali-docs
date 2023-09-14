@@ -83,7 +83,7 @@ const News = () => {
               Kali Linux 2023.3 Release (Internal Infrastructure & Kali
               Autopilot)
             </p>
-            <p className="text-[15px] text-blue-800 mt-2">
+            <p className="text-[15px] text-blue-800">
               Wednesday, 23 August 2023
             </p>
             <img className="object-cover rounded w-full" src={kali1} />
