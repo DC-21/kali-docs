@@ -107,6 +107,13 @@ const Docs = () => {
                   APT package manager, which is the default package manager for
                   Kali. Here are the steps to install PostgreSQL:
                 </p>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                   1. Update your package list to ensure you have the latest
+                    information about available packages:
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">sudo apt update</p>
+                </div>
               </div>
             </div>
           </div>
