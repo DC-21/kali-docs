@@ -60,7 +60,12 @@ const Docs = () => {
           </div>
         </div>
         <div className='w-full flex justify-center h-screen py-10'>
-          <div className='border-2 justify-center flex w-full rounded border-blue-900'>Docs</div>
+          <div className='border-2 justify-start flex w-full rounded border-blue-900'>
+            <li className='w-full flex flex-col px-4 py-4'>
+              <a className='py-2 px-2  hover:bg-blue-500 rounded'>Install Postgres</a>
+              <a className='py-2 px-2  hover:bg-blue-500 rounded'>Install MySQL</a>
+            </li>
+          </div>
         </div>
       </div>
       <div className="w-full flex py-4 text-blue-900 justify-between items-center">
