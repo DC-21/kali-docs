@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import kali1 from "../images/kali1.jpg";
-import kali2 from "../images/banner-kali-10-year.jpg"
+import kali2 from "../images/banner-kali-10-year.jpg";
+import purple from "../images/purple.jpg";
+import kali3 from "../images/kali-everywhere-banner.jpg";
+import kali4 from "../images/azure.jpg";
 
 const News = () => {
   const [open, setOpen] = useState(false);
@@ -117,22 +120,17 @@ const News = () => {
           </div>
           <div className="w-full justify-start flex flex-col">
             <h1 className="text-[30px] text-blue-900">
-              Kali Linux 2023.3 Release (Internal Infrastructure & Kali
-              Autopilot)
+              Kali Linux 2023.1 Release (Kali Purple & Python Changes)
             </h1>
-            <p className="text-[15px] text-blue-800">
-              Wednesday, 23 August 2023
-            </p>
-            <img className="object-cover rounded w-full" src={kali1} />
+            <p className="text-[15px] text-blue-800">Monday, 13 March 2023</p>
+            <img className="object-cover rounded w-full" src={purple} />
             <p className="text-[20px]">
-              Today we are delighted to introduce our latest release of Kali,
-              2023.3. This release blog post does not have the most features in
-              it, as a lot of the changes have been behind-the-scenes, which
-              brings a huge benefit to us and an indirect positive effect to you
-              as end-users. It always goes without saying, but there are a
-              number of new packages and tools as well as the standard updates.
-              If you want to see what’s new for yourself download or upgrade if
-              you have an existing Kali Linux installation.
+              Today we are releasing Kali 2023.1 (and on our 10th anniversary)!
+              It will be ready for immediate download or updating by the time
+              you have finished reading this post. Given its our 10th
+              anniversary, we are delighted to announce there are a few special
+              things lined up to help celebrate. Stay tuned for a blog post
+              coming out for more information!
             </p>
             <button className="text-[20px] py-2 px-2 bg-blue-700 w-[150px] rounded text-white">
               Read More
@@ -140,22 +138,41 @@ const News = () => {
           </div>
           <div className="w-full justify-start flex flex-col">
             <h1 className="text-[30px] text-blue-900">
-              Kali Linux 2023.3 Release (Internal Infrastructure & Kali
-              Autopilot)
+              Kali Linux (is) Everywhere!
             </h1>
-            <p className="text-[15px] text-blue-800">
-              Wednesday, 23 August 2023
-            </p>
-            <img className="object-cover rounded w-full" src={kali1} />
+            <p className="text-[15px] text-blue-800">11 January 2023</p>
+            <img className="object-cover rounded w-full" src={kali3} />
             <p className="text-[20px]">
-              Today we are delighted to introduce our latest release of Kali,
-              2023.3. This release blog post does not have the most features in
-              it, as a lot of the changes have been behind-the-scenes, which
-              brings a huge benefit to us and an indirect positive effect to you
-              as end-users. It always goes without saying, but there are a
-              number of new packages and tools as well as the standard updates.
-              If you want to see what’s new for yourself download or upgrade if
-              you have an existing Kali Linux installation.
+              One of the primary goals of Kali Linux is to put the tools you
+              need as close to you as possible. Over the years this has resulted
+              in a number of different ways to get Kali, but not everyone knows
+              about all the options! In this post we are going to do an overview
+              of different options you have for running Kali, and where you can
+              go for more information for each option.
+            </p>
+            <button className="text-[20px] py-2 px-2 bg-blue-700 w-[150px] rounded text-white">
+              Read More
+            </button>
+          </div>
+          <div className="w-full justify-start flex flex-col">
+            <h1 className="text-[30px] text-blue-900">
+              Kali Linux 2022.4 Release (Azure, Social & Kali NetHunter Pro)
+            </h1>
+            <p className="text-[15px] text-blue-800">06 December 2022</p>
+            <img className="object-cover rounded w-full" src={kali4} />
+            <p className="text-[20px]">
+              Before the year is over, we thought it was best to get the final
+              2022 release out. Today we are publishing Kali Linux 2022.4. This
+              is ready for immediate download or updating existing
+              installations. A summary of the changelog since August’s 2022.3
+              release: Microsoft Azure - We are back on the Microsoft Azure
+              store More Platforms - Generic Cloud, QEMU VM image & Vagrant
+              libvirt Social Networks - New homes, keeping in touch & press
+              packs Kali NetHunter Pro - Announcing the first release of a
+              “true” Kali Linux on the mobile phone (PinePhone / Pro) Kali
+              NetHunter - Internal Bluetooth support, kernel porting video,
+              firmware updates & other improvements Desktop Updates - GNOME 43 &
+              KDE 5.
             </p>
             <button className="text-[20px] py-2 px-2 bg-blue-700 w-[150px] rounded text-white">
               Read More
