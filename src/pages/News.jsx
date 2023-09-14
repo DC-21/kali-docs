@@ -78,7 +78,7 @@ const News = () => {
           <h1 className="text-[35px] font-bold text-blue-950">
             Kali Latest News
           </h1>
-          <div className="w-full justify-start flex flex-col">
+          <div className="w-full justify-start flex flex-col m-4">
             <h1 className="text-[30px] text-blue-900">
               Kali Linux 2023.3 Release (Internal Infrastructure & Kali
               Autopilot)
@@ -87,7 +87,7 @@ const News = () => {
               Wednesday, 23 August 2023
             </p>
             <img className="object-cover rounded w-full" src={kali1} />
-            <p className="text-[20px]">
+            <p className="text-[20px] py-3">
               Today we are delighted to introduce our latest release of Kali,
               2023.3. This release blog post does not have the most features in
               it, as a lot of the changes have been behind-the-scenes, which
@@ -101,13 +101,13 @@ const News = () => {
               Read More
             </button>
           </div>
-          <div className="w-full justify-start flex flex-col">
+          <div className="w-full justify-start flex flex-col m-4">
             <h1 className="text-[30px] text-blue-900">
               Happy 10th anniversary & Kali's story ...so far
             </h1>
             <p className="text-[15px] text-blue-800">29 March 2023</p>
             <img className="object-cover rounded w-full" src={kali2} />
-            <p className="text-[20px]">
+            <p className="text-[20px] py-3">
               Wednesday 13th, March 2013, 10 years ago, Kali Linux v1.0 was
               first released. Today we want to celebrate Kali’s 10th
               anniversary! Time has flown. And gosh, a lot has changed since
@@ -118,13 +118,13 @@ const News = () => {
               Read More
             </button>
           </div>
-          <div className="w-full justify-start flex flex-col">
+          <div className="w-full justify-start flex flex-col m-4">
             <h1 className="text-[30px] text-blue-900">
               Kali Linux 2023.1 Release (Kali Purple & Python Changes)
             </h1>
             <p className="text-[15px] text-blue-800">Monday, 13 March 2023</p>
             <img className="object-cover rounded w-full" src={purple} />
-            <p className="text-[20px]">
+            <p className="text-[20px] py-3">
               Today we are releasing Kali 2023.1 (and on our 10th anniversary)!
               It will be ready for immediate download or updating by the time
               you have finished reading this post. Given its our 10th
@@ -136,13 +136,13 @@ const News = () => {
               Read More
             </button>
           </div>
-          <div className="w-full justify-start flex flex-col">
+          <div className="w-full justify-start flex flex-col m-4">
             <h1 className="text-[30px] text-blue-900">
               Kali Linux (is) Everywhere!
             </h1>
             <p className="text-[15px] text-blue-800">11 January 2023</p>
             <img className="object-cover rounded w-full" src={kali3} />
-            <p className="text-[20px]">
+            <p className="text-[20px] py-3">
               One of the primary goals of Kali Linux is to put the tools you
               need as close to you as possible. Over the years this has resulted
               in a number of different ways to get Kali, but not everyone knows
@@ -154,13 +154,13 @@ const News = () => {
               Read More
             </button>
           </div>
-          <div className="w-full justify-start flex flex-col">
+          <div className="w-full justify-start flex flex-col m-4">
             <h1 className="text-[30px] text-blue-900">
               Kali Linux 2022.4 Release (Azure, Social & Kali NetHunter Pro)
             </h1>
             <p className="text-[15px] text-blue-800">06 December 2022</p>
             <img className="object-cover rounded w-full" src={kali4} />
-            <p className="text-[20px]">
+            <p className="text-[20px] py-3">
               Before the year is over, we thought it was best to get the final
               2022 release out. Today we are publishing Kali Linux 2022.4. This
               is ready for immediate download or updating existing
