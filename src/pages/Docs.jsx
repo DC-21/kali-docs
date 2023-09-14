@@ -109,10 +109,67 @@ const Docs = () => {
                 </p>
                 <div className="px-2 py-2 w-full flex flex-col">
                   <p>
-                   1. Update your package list to ensure you have the latest
+                    1. Update your package list to ensure you have the latest
                     information about available packages:
                   </p>
-                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">sudo apt update</p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                    sudo apt update
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>2. Install PostgreSQL and the PostgreSQL client:</p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                    sudo apt install postgresql postgresql-client
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    3. During the installation, the PostgreSQL server will be
+                    started automatically. You can check its status with:
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                    sudo systemctl status postgresql
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    4. By default, PostgreSQL is configured to use the
+                    "postgres" user. You should change to the "postgres" user to
+                    perform administrative tasks:
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                    sudo -i -u postgres
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    5. Now, you are logged in as the "postgres" user. You can
+                    access the PostgreSQL command prompt by typing::
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                    psql
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    6. To exit the PostgreSQL command prompt, you can type:
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                  \q
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    7. To exit the "postgres" user shell and return to your regular user account, type:
+                  </p>
+                  <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                  exit
+                  </p>
+                </div>
+                <div className="px-2 py-2 w-full flex flex-col">
+                  <p>
+                    7. You have successfully installed PostgreSQL on Kali Linux. You can now create and manage databases using the PostgreSQL command-line tools or other PostgreSQL client applications.
+                  </p>
                 </div>
               </div>
             </div>
