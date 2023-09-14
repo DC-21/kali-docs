@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import error1 from "../images/error1.png";
 
 const Docs = () => {
   const [open, setOpen] = useState(false);
@@ -85,7 +86,7 @@ const Docs = () => {
             </a>
           </div>
         </div>
-        <div className="w-full flex justify-center h-screen py-10">
+        <div className="w-full flex justify-center h-auto py-10">
           <div className="border-2 justify-center flex w-full rounded border-blue-900">
             <div className="justify-start w-1/4 flex">
               <li className="w-full flex flex-col px-4 py-4">
@@ -151,25 +152,62 @@ const Docs = () => {
                   </p>
                 </div>
                 <div className="px-2 py-2 w-full flex flex-col">
-                  <p>
-                    6. To exit the PostgreSQL command prompt, you can type:
-                  </p>
+                  <p>6. To exit the PostgreSQL command prompt, you can type:</p>
                   <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
-                  \q
+                    \q
                   </p>
                 </div>
                 <div className="px-2 py-2 w-full flex flex-col">
                   <p>
-                    7. To exit the "postgres" user shell and return to your regular user account, type:
+                    7. To exit the "postgres" user shell and return to your
+                    regular user account, type:
                   </p>
                   <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
-                  exit
+                    exit
                   </p>
                 </div>
                 <div className="px-2 py-2 w-full flex flex-col">
                   <p>
-                    7. You have successfully installed PostgreSQL on Kali Linux. You can now create and manage databases using the PostgreSQL command-line tools or other PostgreSQL client applications.
+                    7. You have successfully installed PostgreSQL on Kali Linux.
+                    You can now create and manage databases using the PostgreSQL
+                    command-line tools or other PostgreSQL client applications.
                   </p>
+                </div>
+                <div className="w-full flex flex-col py-2">
+                  <p className="text-[30px]">
+                    Common Errors you may encounter during installing or while
+                    using postgres
+                  </p>
+                  <div className="w-full flex flex-col py-3">
+                    <img
+                      className="object-cover w-[700px] h-auto rounded"
+                      src={error1}
+                    />
+                    <div className="px-2 py-2 w-full flex flex-col">
+                      <p>
+                        The error message you're encountering is related to a
+                        collation version mismatch in the PostgreSQL database.
+                        It suggests that the default collation settings in your
+                        database template "template1" do not match the collation
+                        version provided by the operating system.
+                      </p>
+                      <p className="mt-3">
+                        To resolve this issue, you can follow these steps:
+                      </p>
+                      <p className="mt-3 text-[25px]">
+                        Access PostgreSQL as a Superuser:
+                      </p>
+                      <p className="mt-3">
+                        First, you'll need to access PostgreSQL as a superuser,
+                        typically the "postgres" user. You can do this using the
+                        sudo command:
+                      </p>
+                      <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                      sudo -u postgres psql
+
+                  </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
