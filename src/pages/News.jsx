@@ -74,7 +74,7 @@ const News = () => {
         </li>
       </div>
       <div className="flex-grow flex flex-col justify-center items-center py-6">
-        <div className="w-[900px] justify-center items-center flex flex-col">
+        <div className="md:w-[900px] ld:w-[900px] w-full justify-center items-center flex flex-col">
           <h1 className="text-[35px] font-bold text-blue-950">
             Kali Latest News
           </h1>
