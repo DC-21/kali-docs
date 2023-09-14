@@ -78,7 +78,7 @@ const News = () => {
               Autopilot)
             </h1>
             <p className="text-[15px] text-blue-800">Wednesday, 23 August 2023</p>
-            <img src={kali1} />
+            <img className="object-cover rounded w-full" src={kali1} />
             <p className="text-[20px]">
               Today we are delighted to introduce our latest release of Kali,
               2023.3. This release blog post does not have the most features in
