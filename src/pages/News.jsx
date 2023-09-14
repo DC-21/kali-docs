@@ -75,19 +75,19 @@ const News = () => {
       </div>
       <div className="flex-grow flex flex-col justify-center items-center py-6">
         <div className="md:w-[900px] ld:w-[900px] w-full justify-center items-center flex flex-col">
-          <h1 className="text-[35px] font-bold text-blue-950">
+          <h1 className="md:text-[35px] lg:text-[35px] text-3xl lg:font-bold md:font-bold font-semibold text-blue-950">
             Kali Latest News
           </h1>
-          <div className="w-full justify-start flex flex-col m-4">
-            <h1 className="text-[30px] text-blue-900">
+          <div className="w-full md:justify-start justify-center items-center flex flex-col m-4">
+            <p className="lg:text-[30px] md:text-[30px] text-[18px] text-blue-900">
               Kali Linux 2023.3 Release (Internal Infrastructure & Kali
               Autopilot)
-            </h1>
+            </p>
             <p className="text-[15px] text-blue-800">
               Wednesday, 23 August 2023
             </p>
             <img className="object-cover rounded w-full" src={kali1} />
-            <p className="text-[20px] py-3">
+            <p className="md:text-[20px] text-[18px] py-3">
               Today we are delighted to introduce our latest release of Kali,
               2023.3. This release blog post does not have the most features in
               it, as a lot of the changes have been behind-the-scenes, which
