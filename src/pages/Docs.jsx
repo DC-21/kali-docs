@@ -195,7 +195,7 @@ const Docs = () => {
                         To resolve this issue, you can follow these steps:
                       </p>
                       <p className="mt-3 text-[25px]">
-                        Access PostgreSQL as a Superuser:
+                        1. Access PostgreSQL as a Superuser:
                       </p>
                       <p className="mt-3">
                         First, you'll need to access PostgreSQL as a superuser,
@@ -203,9 +203,48 @@ const Docs = () => {
                         sudo command:
                       </p>
                       <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
-                      sudo -u postgres psql
-
-                  </p>
+                        sudo -u postgres psql
+                      </p>
+                      <p className="mt-3 text-[25px]">
+                        2. Rebuild Template Database:
+                      </p>
+                      <p className="mt-3">
+                        Once you are in the PostgreSQL prompt, rebuild the
+                        "template1" database with the correct collation version.
+                        Run the following SQL command:
+                      </p>
+                      <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                        ALTER DATABASE template1 REFRESH COLLATION VERSION;
+                      </p>
+                      <p className="mt-3">
+                        This command refreshes the collation version of the
+                        "template1" database to match the one provided by the
+                        operating system.
+                      </p>
+                      <p className="mt-3 text-[25px]">
+                        3. Exit PostgreSQL:
+                      </p>
+                      <p className="mt-3">
+                      After running the command, exit the PostgreSQL prompt:
+                      </p>
+                      <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                        \q
+                      </p>
+                      <p className="mt-3 text-[25px]">
+                        4. Restart PostgreSQL:
+                      </p>
+                      <p className="mt-3">
+                      Restart the PostgreSQL service to apply the changes:
+                      </p>
+                      <p className="mt-2 px-2 py-3 bg-gray-500 rounded text-white text-lg">
+                        sudo systemctl restart postgresql
+                      </p>
+                      <p className="mt-3 text-[25px]">
+                        5. Retry Prisma:
+                      </p>
+                      <p className="mt-3">
+                      Try running your Prisma setup or application again to see if the issue is resolved.
+                      </p>
                     </div>
                   </div>
                 </div>
